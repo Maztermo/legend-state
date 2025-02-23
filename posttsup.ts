@@ -66,8 +66,10 @@ Bun.write('dist/package.json', JSON.stringify(pkg, undefined, 2));
 
 async function fix_To$(path: string) {
     const pathOld = path.replace('$', '_');
-    await Bun.write(path, Bun.file(pathOld));
-    fs.unlinkSync(pathOld);
+    if (fs.existsSync(pathOld)) {
+        await Bun.write(path, Bun.file(pathOld));
+        fs.unlinkSync(pathOld);
+    }
 }
 fix_To$('dist/config/enable$GetSet.d.ts');
 fix_To$('dist/config/enable$GetSet.d.mts');

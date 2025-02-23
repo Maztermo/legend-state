@@ -55,7 +55,7 @@ export default defineConfig({
     entry,
     format: ['cjs', 'esm'],
     external,
-    dts: true,
+    dts: false,
     treeshake: true,
     splitting: false,
     clean: true,
