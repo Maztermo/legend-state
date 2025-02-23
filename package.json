@@ -45,6 +45,20 @@
       "buntestsilent": "bun test --timeout 50 > /dev/null 2>&1",
       "upgrade": "bunx npm-check-updates@latest --interactive --format group -p bun"
     },
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.js"
+        },
+        "./sync-plugins": {
+            "import": "./dist/sync-plugins/index.mjs",
+            "require": "./dist/sync-plugins/index.js"
+        },
+        "./persist-plugins": {
+            "import": "./dist/persist-plugins/index.mjs",
+            "require": "./dist/persist-plugins/index.js"
+        }
+    },
     "lsexports": [
       ".",
       "sync",
