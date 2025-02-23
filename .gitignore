@@ -1,2 +1,11 @@
 node_modules
 .rollup.cache
+.DS_Store
+coverage
+*.log
+.env
+.env.*
+!.env.example
+
+# Keep dist directory for GitHub dependencies
+!dist/
