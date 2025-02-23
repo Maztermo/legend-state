@@ -9,6 +9,78 @@
     "files": [
         "**"
     ],
+    "exports": {
+        ".": {
+            "types": "./index.d.ts",
+            "import": "./index.mjs",
+            "require": "./index.js"
+        },
+        "./sync": {
+            "types": "./sync.d.ts",
+            "import": "./sync.mjs",
+            "require": "./sync.js"
+        },
+        "./react": {
+            "types": "./react.d.ts",
+            "import": "./react.mjs",
+            "require": "./react.js"
+        },
+        "./react-native": {
+            "types": "./react-native.d.ts",
+            "import": "./react-native.mjs",
+            "require": "./react-native.js"
+        },
+        "./react-web": {
+            "types": "./react-web.d.ts",
+            "import": "./react-web.mjs",
+            "require": "./react-web.js"
+        },
+        "./trace": {
+            "types": "./trace.d.ts",
+            "import": "./trace.mjs",
+            "require": "./trace.js"
+        },
+        "./babel": {
+            "types": "./babel.d.ts",
+            "import": "./babel.mjs",
+            "require": "./babel.js"
+        },
+        "./react-reactive/*": {
+            "types": "./react-reactive/*.d.ts",
+            "import": "./react-reactive/*.mjs",
+            "require": "./react-reactive/*.js"
+        },
+        "./as/*": {
+            "types": "./as/*.d.ts",
+            "import": "./as/*.mjs",
+            "require": "./as/*.js"
+        },
+        "./config/*": {
+            "types": "./config/*.d.ts",
+            "import": "./config/*.mjs",
+            "require": "./config/*.js"
+        },
+        "./helpers/*": {
+            "types": "./helpers/*.d.ts",
+            "import": "./helpers/*.mjs",
+            "require": "./helpers/*.js"
+        },
+        "./persist-plugins/*": {
+            "types": "./persist-plugins/*.d.ts",
+            "import": "./persist-plugins/*.mjs",
+            "require": "./persist-plugins/*.js"
+        },
+        "./sync-plugins/*": {
+            "types": "./sync-plugins/*.d.ts",
+            "import": "./sync-plugins/*.mjs",
+            "require": "./sync-plugins/*.js"
+        },
+        "./react-hooks/*": {
+            "types": "./react-hooks/*.d.ts",
+            "import": "./react-hooks/*.mjs",
+            "require": "./react-hooks/*.js"
+        }
+    },
     "engines": {
         "node": ">=16.6.0",
         "npm": ">=8.11.0"

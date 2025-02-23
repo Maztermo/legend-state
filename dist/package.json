@@ -9,43 +9,6 @@
   "files": [
     "**"
   ],
-  "dependencies": {
-    "use-sync-external-store": "^1.2.2"
-  },
-  "peerDependencies": {
-    "expo-sqlite": "^15.0.0"
-  },
-  "peerDependenciesMeta": {
-    "expo-sqlite": {
-      "optional": true
-    }
-  },
-  "author": "Legend <contact@legendapp.com> (https://github.com/LegendApp)",
-  "keywords": [
-    "react",
-    "react-native",
-    "state",
-    "hooks",
-    "proxy"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LegendApp/legend-state.git"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/LegendApp/legend-state/issues"
-  },
-  "homepage": "https://github.com/LegendApp/legend-state#readme",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "private": false,
   "exports": {
     "./package.json": "./package.json",
     "./babel": {
@@ -322,5 +285,42 @@
       "require": "./react-hooks/useMeasure.js",
       "types": "./react-hooks/useMeasure.d.ts"
     }
-  }
+  },
+  "dependencies": {
+    "use-sync-external-store": "^1.2.2"
+  },
+  "peerDependencies": {
+    "expo-sqlite": "^15.0.0"
+  },
+  "peerDependenciesMeta": {
+    "expo-sqlite": {
+      "optional": true
+    }
+  },
+  "author": "Legend <contact@legendapp.com> (https://github.com/LegendApp)",
+  "keywords": [
+    "react",
+    "react-native",
+    "state",
+    "hooks",
+    "proxy"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LegendApp/legend-state.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LegendApp/legend-state/issues"
+  },
+  "homepage": "https://github.com/LegendApp/legend-state#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "private": false
 }
