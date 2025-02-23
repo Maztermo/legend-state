@@ -1,4 +1,4 @@
-# Legend-State
+# Legend-State - mazVer1
 
 Legend-State is a super fast all-in-one state and sync library that lets you write less code to make faster apps. Legend-State has four primary goals:
 
