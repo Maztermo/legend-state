@@ -258,8 +258,9 @@ export function syncedSupabase<
 
                       // in last-sync mode, filter for rows updated more recently than the last sync
                       if (changesSince === 'last-sync' && lastSync) {
-                          const date = new Date(lastSync).toISOString();
-                          select = select.gt(fieldUpdatedAt!, date);
+                          // Add a tiny offset so rows with the same timestamp are excluded
+                          const offsetDate = new Date(new Date(lastSync).valueOf() + 1).toISOString();
+                          select = select.gt(fieldUpdatedAt!, offsetDate);
                       }
                       // filter with filter parameter
                       if (filter) {
